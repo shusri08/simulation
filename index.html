@@ -1,181 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="shortcut icon" href="#">
-    <meta charset="UTF-8">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
     <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css">
-   
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main class="main">
-        <div class="header" id="header">
-            <h1>RATE CONSTANT AND ACTIVATION ENERGY OF POTASSIUM PERMANGANATE AND OXALIC ACID REACTION</h1>
-        </div>
+      <div class="header" id="header">
+        <h1>
+          RATE CONSTANT AND ACTIVATION ENERGY OF POTASSIUM PERMANGANATE AND
+          OXALIC ACID REACTION
+        </h1>
+      </div>
 
-        <div class="app_container">
-            <p class="info" id="info" align="center">1/2</p>
-            <button id="start">Animated Video</button>
-            <div class="buttons">
-                <button class="prev" id="prev">&lt;</button>
-                <img src="img/a.png" width="800" height="500" alt="slide images" class="image" id="image">
-                <button class="next" id="next">&gt;</button>
+      <div class="app_container" style="display: flex; flex-direction: row">
+        <div>
+          <div class="carousel-container">
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                min-width: 70vw;
+              "
+            >
+              <button id="start">
+                <svg
+                  height="16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path
+                    d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"
+                  ></path>
+                </svg>
+                <span>Animated Video</span>
+              </button>
+              <div style="margin: 0 auto">
+                <p class="info" id="info" align="center">1/2</p>
+              </div>
             </div>
-            <div class="video-container">
-                <!-- Video content will be added here dynamically -->
-            </div>
+            <div style="display: flex; flex-direction: row; width: max-content">
+              <div
+                class="carousel"
+                style="display: flex; flex-direction: row; padding: 10px"
+              >
+                <div>
+                  <img
+                    src="img/a.png"
+                    width="800"
+                    height="500"
+                    alt="slide images"
+                    class="image"
+                    id="image"
+                  />
 
+                  <div
+                    class="buttons"
+                    style="display: flex; justify-content: end; padding: 10px 0"
+                  >
+                    <button class="prev" id="prev" style="margin-right: 10px">
+                      Prev
+                    </button>
+                    <button class="next" id="next">Next</button>
+                  </div>
+                </div>
+                <div
+                  class="instructions-container"
+                  style="text-align: center; margin: 10px"
+                >
+                  <h3>Instructions</h3>
+                  <div class="instructions">
+                    <span class="instruction">Click start</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-container">
+            <!-- Video content will be added here dynamically -->
+          </div>
         </div>
+      </div>
     </main>
 
     <script src="slider.js"></script>
-</body>
-
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="shortcut icon" href="#">
-    <meta charset="UTF-8">
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css">
-
-
-
-
-
-</head>
-
-<body>
-
-    <main class="main">
-        <div class="header" id="header">
-            <h1>RATE CONSTANT AND ACTIVATION ENERGY OF POTASSIUM PERMANGANATE AND OXALIC ACID REACTION</h1>
-        </div>
-
-
-
-
-
-        <div class="app_container">
-            <p class="info" id="info">1/2</p>
-            <button id="start">Start Video</button>
-            <div class="buttons">
-                <button class="prev" id="prev">&lt;</button>
-                <img src="img/a.png" alt="slide images" class="image" id="image">
-                <button class="next" id="next">&gt;</button>
-            </div>
-            <div class="video-container">
-                
-            </div>
-        </div>
-
-        <script src="slider.js"></script>
-
-
-
-</body>
-
-</html> -->
-
-<!-- <!DOCTYPE html> 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-item">
-                <img src="img/a.png" alt="Image 1">
-            </div>
-            <div class="carousel-item" style="width: 10%; height: 10%;">
-                <video src="./img/Add a subheading (4).mp4"  style="width: 100%; min-width: 100%; max-width: 100%; height: 100%; object-fit: cover;" preload="auto" controls autoplay></video>
-            </div>
-            <div class="carousel-item">
-                <img src="img/b.png" alt="Image 2">
-            </div>
-        </div>
-        <button id="prev">Previous</button>
-        <button id="next">Next</button>
-        <div id="info">1/3</div>
-    </div>
-
-    <script>
-        const media = [
-            { type: 'image', src: 'img/a.png' },
-            { type: 'video', src: 'img/Add a subheading (4).mp4' },
-            { type: 'image', src: 'img/b.png' },
-        ];
-        const firstMedia = 0;
-        const lastMedia = media.length - 1;
-        let currentMedia = 0;
-
-        // Initialize the media and info
-        const carousel = document.querySelector('.carousel');
-        const infoTag = document.getElementById('info');
-        const prevBtn = document.getElementById('prev');
-        const nextBtn = document.getElementById('next');
-
-        function updateMedia() {
-            const mediaItem = media[currentMedia];
-            const mediaElement = createMediaElement(mediaItem);
-            carousel.innerHTML = '';
-            carousel.appendChild(mediaElement);
-            infoTag.innerHTML = `${currentMedia + 1}/${media.length}`;
-        }
-
-        function createMediaElement(mediaItem) {
-            if (mediaItem.type === 'image') {
-                const img = document.createElement('img');
-                img.src = mediaItem.src;
-                img.alt = `Image ${currentMedia + 1}`;
-                return img;
-            } else if (mediaItem.type === 'video') {
-                const video = document.createElement('video');
-                video.src = mediaItem.src;
-                video.controls = true;
-                video.autoplay = true;
-                return video;
-            }
-        }
-
-        // Next button
-        nextBtn.addEventListener('click', () => {
-            currentMedia++;
-            if (currentMedia > lastMedia) {
-                currentMedia = firstMedia;
-            }
-            updateMedia();
-        });
-
-        // Previous button
-        prevBtn.addEventListener('click', () => {
-            currentMedia--;
-            if (currentMedia < firstMedia) {
-                currentMedia = lastMedia;
-            }
-            updateMedia();
-        });
-
-        // Initial media update
-        updateMedia();
-    </script>
-</body>
-</html> --> 

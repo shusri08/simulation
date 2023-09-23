@@ -1,97 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body, .main {
-    height: 100%;
-    width: 100%;
-    position: relative;
+html,
+body,
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .header {
-    border: 1px solid black;
-    background-color: grey;
-    height: 7%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid black;
+  background-color: grey;
+  height: 7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header h1 {
-    font-size: larger;
+  font-size: larger;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.buttons:hover #prev,
+/* .buttons:hover #prev,
 .buttons:hover #next {
     opacity: 1;
-}
+} */
 
-#prev,
+/* #prev,
 #next {
     opacity: 0;
-}
+} */
 
 .video-container {
-    width: 70%; /* Adjust as needed */
-    height: auto;
-    margin: 0 auto; /* Center the container horizontally */
+  width: 70%; 
+  height: auto;
+  margin: 0 auto; 
+}
 
+.carousel-container {
+  width: max-content; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 video {
-    max-width: 100%;
-    height: auto;
-    
+  max-width: 100%;
+  height: auto;
 }
 
 .app_container {
-      width: 80%; /* Adjust as needed */
-      margin: 0 auto; 
-      overflow: hidden;
-   
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 body {
-    background-color: lightgray;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: lightgray;
 }
 
 .prev,
 .next {
-    width: 100px;
-    height: 50px;
-    font-size: 1em;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(96, 147, 163);
-    cursor: pointer; /* Add cursor style for buttons */
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(96, 147, 163);
+  cursor: pointer; /* Add cursor style for buttons */
 }
 
 .prev:hover,
 .next:hover {
-    background-color: blue;
-    color: white;
+  background-color: blue;
+  color: white;
 }
 
 .info {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#start {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+
+#start > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+#start:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+#start:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.instructions-container {
+    width: 20vw;
+}
+
+.instructions-container .instructions {
+    padding: 10px;
 }
